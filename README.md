@@ -11,10 +11,11 @@ A modern React application for recruiters to analyze and manage candidate CVs. T
 - **Sort & View**: Filter and sort candidates by skills and experience
 - **Admin Panel**: Manage users, settings, and permissions
 - **Role-Based Access**: Switch between Uploader and Analyzer roles
+- **Dark Mode**: Full support for dark mode throughout the application
 
 ## Screenshots
 
-(Add screenshots of your application here)
+Screenshots available in the repository's `/screenshots` folder.
 
 ## Technologies Used
 
@@ -22,6 +23,7 @@ A modern React application for recruiters to analyze and manage candidate CVs. T
 - Vite
 - React Router v6
 - Tailwind CSS
+- Context API for state management
 
 ## Prerequisites
 
@@ -32,15 +34,13 @@ Before running this application, you need to have the following installed:
 
 ## Installation
 
-1. Clone the repository (or download and extract the ZIP file)
-
+1. Clone the repository
 ```bash
-git clone <repository-url>
-cd cv-analyzer-app
+git clone https://github.com/gsumithub/CV-Analyzer.git
+cd CV-Analyzer
 ```
 
 2. Install dependencies
-
 ```bash
 npm install
 ```
@@ -48,7 +48,6 @@ npm install
 ## Running the Application
 
 To start the development server:
-
 ```bash
 npm run dev
 ```
@@ -58,13 +57,11 @@ The application will start running at http://localhost:5173 (or another port if 
 ## Building for Production
 
 To create a production build:
-
 ```bash
 npm run build
 ```
 
 To preview the production build:
-
 ```bash
 npm run preview
 ```
@@ -78,7 +75,7 @@ cv-analyzer-app/
 │   ├── components/    # React components
 │   │   ├── layout/    # Layout components
 │   │   ├── pages/     # Page components
-│   │   └── roles/     # Role-based UI components
+│   ├── contexts/      # React contexts including ThemeContext
 │   ├── App.jsx        # Main application component
 │   ├── Home.jsx       # Home page component
 │   ├── main.jsx       # Application entry point
@@ -94,12 +91,14 @@ cv-analyzer-app/
 
 - `/` - Home page with navigation cards
 - `/upload` - Upload CVs and resumes
+- `/dataset` - View and manage uploaded resumes
 - `/dashboard` - View recruitment metrics
 - `/analysis` - Analyze candidate profiles
 - `/admin` - Access admin panel
 - `/sort` - Sort and filter candidates
 - `/analytics` - View analytics and charts
 - `/roles` - Switch between Uploader and Analyzer roles
+- `/settings` - Configure application settings including dark mode
 
 ## User Roles
 

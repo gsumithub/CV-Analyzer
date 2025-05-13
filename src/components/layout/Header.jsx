@@ -5,13 +5,13 @@ function Header() {
   
   const navItems = [
     { name: 'Home', path: '/' },
+    { name: 'Dataset', path: '/dataset' },
     { name: 'Upload', path: '/upload' },
+    { name: 'Desk', path: '/desk' },
     { name: 'Dashboard', path: '/dashboard' },
     { name: 'Analysis', path: '/analysis' },
-    { name: 'Sort & View', path: '/sort' },
-    { name: 'Analytics', path: '/analytics' },
-    { name: 'Roles', path: '/roles' },
-    { name: 'Admin', path: '/admin' },
+    { name: 'Sort', path: '/sort' },
+    { name: 'Settings', path: '/settings' },
   ];
   
   return (
@@ -44,9 +44,12 @@ function Header() {
           </nav>
           
           <div className="hidden md:flex items-center space-x-4">
-            <button className="bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-1 rounded-md text-sm font-medium transition-colors">
-              Help
-            </button>
+            <Link to="/settings" className="bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-1 rounded-md text-sm font-medium transition-colors">
+              Settings
+            </Link>
+            <Link to="/admin" className="bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-3 py-1 rounded-md text-sm font-medium transition-colors">
+              Admin
+            </Link>
             <div className="h-8 w-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-semibold">
               UR
             </div>
