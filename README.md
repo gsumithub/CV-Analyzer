@@ -74,7 +74,7 @@ cv-analyzer-app/
 ├── src/               # Source files
 │   ├── components/    # React components
 │   │   ├── layout/    # Layout components
-│   │   ├── pages/     # Page components
+│   │   └── pages/     # Page components
 │   ├── contexts/      # React contexts including ThemeContext
 │   ├── App.jsx        # Main application component
 │   ├── Home.jsx       # Home page component
@@ -137,11 +137,12 @@ This application can be deployed to various hosting platforms:
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are not accepted. This is a private project.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is proprietary. All rights reserved. 
+No use, distribution, or modification is permitted without explicit permission from the author.
 
 ---
 
